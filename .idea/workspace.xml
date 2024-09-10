@@ -4,30 +4,216 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9abdd18-f6ad-429c-b85b-0fa8c1ea5bdc" name="Changes" comment="" />
+    <list default="true" id="e9abdd18-f6ad-429c-b85b-0fa8c1ea5bdc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/allure-results/00e58127-e9b7-493d-9de8-d0da0675069c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0312f797-4c0f-498d-92cd-c60d4231a54f-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/13255ad5-1334-4347-8b2c-406ebf36a03e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/3c4255c6-460b-4d1c-8402-442a7d15b467-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/595a5bf6-36bb-4f93-ace4-b9df8361a535-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7bc69bef-c230-4f1d-8920-3ee509eb90d0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7bceddce-e6f7-4772-9ff3-1bc116d11e78-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/816b8e09-6ec2-4dff-ac6b-25805343d672-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/82d069f9-f4ea-48a7-8898-4c3b46f603af-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/88ffcc79-1c0e-4405-b11a-e69f58c9440a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8c7c07b1-f8f4-4cdc-a943-235decb2c406-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/91da1cad-5238-4e8c-8ae9-7c8916c93b67-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9505377c-1bc9-4255-af81-23d9c2e86a70-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/96908a91-bc1e-4d5c-ad64-75b22c314762-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9c7a6e63-3230-4348-807a-49ea111aac66-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a0afcafd-14f6-4dd7-8df7-a63592148e0e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a36fdece-89f5-4e21-b925-6525f47d052f-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d7e2f2f0-2771-4a97-89a4-c406f35df666-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e244f747-0490-4cdc-a7bb-916d591d81fe-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e6261d2c-21a3-4f86-8bab-6cf54e671cf0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f611b71e-9b3b-4675-a481-f494bd8722d0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/api/UserCreationAndDeletion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/factory/ChromeDriverProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/factory/FirefoxDriverProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/factory/WebDriverFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/factory/WebDriverProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/locators/PageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/LogInAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/LogInTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/RegistrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/SectionsConstructorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/SwitchingPersonalAccountToConstructorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/SwitchingPersonalCabinetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/springpattern/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/springpattern/AppTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2lLP6KDUoBCXnFFodsvWuCOBf6l" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.WebAppTest.executor": "Run",
+    "JUnit.LogAccountTest.logAccount.executor": "Run",
+    "JUnit.LogInAccountTest.executor": "Run",
+    "JUnit.LogInAccountTest.logInAccountInChrome.executor": "Run",
+    "JUnit.LogInAccountTest.logInAccountInFirefox.executor": "Run",
+    "JUnit.LogInTest.executor": "Run",
+    "JUnit.LogInTest.logInTestChrome.executor": "Run",
+    "JUnit.LogInTest.logInTestFirefox.executor": "Run",
+    "JUnit.LogInTest.testMainPageButtonLogIn.executor": "Run",
+    "JUnit.LogInTest.testMainPageButtonPersonalAccount.executor": "Run",
+    "JUnit.LogInTest.testRecoveryButtonLogIn.executor": "Run",
+    "JUnit.LogInTest.testRegistrationButtonLogIn.executor": "Run",
+    "JUnit.RegistrationTest.executor": "Run",
+    "JUnit.RegistrationTest.testRegistrationInChrome.executor": "Run",
+    "JUnit.RegistrationTest.testRegistrationInvalidPassword.executor": "Run",
+    "JUnit.RegistrationTest.testValidRegistration.executor": "Run",
+    "JUnit.SectionsConstructorTest.executor": "Run",
+    "JUnit.SectionsConstructorTest.navigatingSectionsConstructor.executor": "Run",
+    "JUnit.SectionsConstructorTest.sectionsConstructorTestFirefox.executor": "Run",
+    "JUnit.SimpleWebDriverTest.executor": "Run",
+    "JUnit.SimpleWebDriverTest.testOpenChromeAndClickButton.executor": "Run",
+    "JUnit.SimpleWebDriverTest.testOpenSiteInYandex.executor": "Run",
+    "JUnit.SimpleWebDriverTest.testOpenYandexAndClickButton.executor": "Run",
+    "JUnit.SwitchingPersonalAccountToConstructorTest.authorizedUserTransitionLogo.executor": "Run",
+    "JUnit.SwitchingPersonalAccountToConstructorTest.authorizedUserTransitionMainPage.executor": "Run",
+    "JUnit.SwitchingPersonalAccountToConstructorTest.executor": "Run",
+    "JUnit.SwitchingPersonalCabinetTest.TransitionAuthorizedUser.executor": "Run",
+    "JUnit.SwitchingPersonalCabinetTest.TransitionUnauthorizedUser.executor": "Run",
+    "JUnit.SwitchingPersonalCabinetTest.executor": "Run",
+    "JUnit.SwitchingPersonalCabinetTest.switchingPersonalCabinetChrome.executor": "Run",
+    "JUnit.SwitchingPersonalCabinetTest.switchingPersonalCabinetFirefox.executor": "Run",
+    "JUnit.YandexTest.executor": "Run",
+    "JUnit.YandexTest.test.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.Diplom_3 [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop3",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/java/Diplom/Diplom_3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java\Diplom\Diplom_3\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LogInAccountTest">
+    <configuration name="LogInAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.springpattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springpattern" />
+      <option name="MAIN_CLASS_NAME" value="org.springpattern.LogInAccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.springpattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springpattern" />
+      <option name="MAIN_CLASS_NAME" value="org.springpattern.LogInTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTest.logInTestChrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.springpattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springpattern" />
+      <option name="MAIN_CLASS_NAME" value="org.springpattern.LogInTest" />
+      <option name="METHOD_NAME" value="logInTestChrome" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTest.logInTestFirefox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.springpattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springpattern" />
+      <option name="MAIN_CLASS_NAME" value="org.springpattern.LogInTest" />
+      <option name="METHOD_NAME" value="logInTestFirefox" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.springpattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springpattern" />
+      <option name="MAIN_CLASS_NAME" value="org.springpattern.RegistrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LogInAccountTest" />
+        <item itemvalue="JUnit.LogInTest.logInTestFirefox" />
+        <item itemvalue="JUnit.RegistrationTest" />
+        <item itemvalue="JUnit.LogInTest.logInTestChrome" />
+        <item itemvalue="JUnit.LogInTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -44,11 +230,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724956210088</updated>
-      <workItem from="1724956211135" duration="1000" />
+      <workItem from="1724956211135" duration="30000" />
+      <workItem from="1724956615354" duration="296000" />
+      <workItem from="1724956924258" duration="7000" />
+      <workItem from="1725545875253" duration="5398000" />
+      <workItem from="1725556540199" duration="7797000" />
+      <workItem from="1725566165897" duration="453000" />
+      <workItem from="1725621970414" duration="4490000" />
+      <workItem from="1725628675541" duration="1265000" />
+      <workItem from="1725629974347" duration="53000" />
+      <workItem from="1725630121326" duration="3196000" />
+      <workItem from="1725698115302" duration="9711000" />
+      <workItem from="1725710520561" duration="8478000" />
+      <workItem from="1725734420670" duration="2742000" />
+      <workItem from="1725778730437" duration="8125000" />
+      <workItem from="1725789983873" duration="3768000" />
+      <workItem from="1725799342910" duration="15023000" />
+      <workItem from="1725817743469" duration="973000" />
+      <workItem from="1725818726261" duration="1626000" />
+      <workItem from="1725820365851" duration="744000" />
+      <workItem from="1725822027318" duration="562000" />
+      <workItem from="1725822602620" duration="580000" />
+      <workItem from="1725823194720" duration="2854000" />
+      <workItem from="1725826071718" duration="4222000" />
+      <workItem from="1725887054014" duration="381000" />
+      <workItem from="1725888134981" duration="1683000" />
+      <workItem from="1725955003755" duration="1288000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
