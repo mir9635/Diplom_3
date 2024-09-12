@@ -1,23 +1,23 @@
 package org.springpattern;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 import locators.PageObject;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.springpattern.factory.WebDriverFactory;
-import org.testng.Assert;
-
-import java.time.Duration;
-
-public class SectionsConstructorTest {
-    private WebDriver driver;
-    PageObject pageObject;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 
-    @AfterEach
+public class SectionsConstructorTest extends BaseTest {
+
+    @Override
+    @Before
+    public void setUp() {
+        pageObject = new PageObject();
+    }
+
+
+    @After
     public void clean() {
         if (driver != null) {
             driver.quit();
@@ -25,45 +25,36 @@ public class SectionsConstructorTest {
     }
 
     @Test
-    public void sectionsConstructorTestFirefox() {
+    @Description("Тест что в конструкторе работают переходы по разделам для браузера Firefox")
+    public void testSectionsConstructorTestFirefox() {
         navigatingSectionsConstructor("firefox");
     }
 
     @Test
-    public void sectionsConstructorTestChrome() {
+    @Description("Тест что в конструкторе работают переходы по разделам для браузера Chrome")
+    public void testSectionsConstructorTestChrome() {
         navigatingSectionsConstructor("chrome");
     }
 
+    @Step("Переходы по разделам в конструкторе для браузере {browser}")
     public void navigatingSectionsConstructor(String browser) {
-        pageObject = new PageObject();
-        driver = WebDriverFactory.getDriver(browser);
-        driver.get("https://stellarburgers.nomoreparties.site/");
 
-        driver.manage().window().maximize();
+        initializeDriver(browser);
+        goPage("");
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        // Ожидание, пока элемент "Соусы" станет доступным, и клик
+        clickConstructorElement(pageObject.constructorButtonSauces);
+        checkingElementActivity(pageObject.constructorButtonSaucesClass, "Вкладка 'Соусы' не активна");
 
-// Ожидание, пока элемент "Соусы" станет доступным, и клик
-        WebElement saucesButton = wait.until(ExpectedConditions.elementToBeClickable(pageObject.constructorButtonSauces));
-        saucesButton.click();
-
-        WebElement saucesTab = wait.until(ExpectedConditions.visibilityOfElementLocated(pageObject.constructorButtonSaucesClass));
-        Assert.assertTrue( saucesTab.getAttribute("class").contains("tab_tab_type_current__2BEPc"),"Вкладка 'Соусы' не активна");
-
-// Ожидание, пока элемент "Булки" станет доступным, и клик
-        WebElement bunsButton = wait.until(ExpectedConditions.elementToBeClickable(pageObject.constructorButtonBuns));
-        bunsButton.click();
-
+        // Ожидание, пока элемент "Булки" станет доступным, и клик
+        clickConstructorElement(pageObject.constructorButtonBuns);
         // Проверка, что вкладка "Булки" активна, и вкладка "Соусы" не активна
-        WebElement bunsTab = wait.until(ExpectedConditions.visibilityOfElementLocated(pageObject.constructorButtonBunsClass));
-        Assert.assertTrue( bunsTab.getAttribute("class").contains("tab_tab_type_current__2BEPc"),"Вкладка 'Булки' не активна");
+        checkingElementActivity(pageObject.constructorButtonBunsClass, "Вкладка 'Булки' не активна");
 
-// Ожидание, пока элемент "Начинки" станет доступным, и клик
-        WebElement fillingsButton = wait.until(ExpectedConditions.elementToBeClickable(pageObject.constructorButtonFillings));
-        fillingsButton.click();
-
+        // Ожидание, пока элемент "Начинки" станет доступным, и клик
+        clickConstructorElement(pageObject.constructorButtonFillings);
         // Проверка, что вкладка "Начинки" активна, и вкладка "Булки" не активна
-        WebElement fillingsTab = wait.until(ExpectedConditions.visibilityOfElementLocated(pageObject.constructorButtonFillingsClass));
-        Assert.assertTrue( fillingsTab.getAttribute("class").contains("tab_tab_type_current__2BEPc"),"Вкладка 'Булки' не активна");
+        checkingElementActivity(pageObject.constructorButtonFillingsClass, "Вкладка 'Начинки' не активна");
+
     }
 }

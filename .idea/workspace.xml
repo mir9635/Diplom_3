@@ -5,44 +5,122 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9abdd18-f6ad-429c-b85b-0fa8c1ea5bdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/allure-results/00e58127-e9b7-493d-9de8-d0da0675069c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0312f797-4c0f-498d-92cd-c60d4231a54f-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/13255ad5-1334-4347-8b2c-406ebf36a03e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3c4255c6-460b-4d1c-8402-442a7d15b467-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/595a5bf6-36bb-4f93-ace4-b9df8361a535-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7bc69bef-c230-4f1d-8920-3ee509eb90d0-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7bceddce-e6f7-4772-9ff3-1bc116d11e78-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/816b8e09-6ec2-4dff-ac6b-25805343d672-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/82d069f9-f4ea-48a7-8898-4c3b46f603af-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/88ffcc79-1c0e-4405-b11a-e69f58c9440a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8c7c07b1-f8f4-4cdc-a943-235decb2c406-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/91da1cad-5238-4e8c-8ae9-7c8916c93b67-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9505377c-1bc9-4255-af81-23d9c2e86a70-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/96908a91-bc1e-4d5c-ad64-75b22c314762-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9c7a6e63-3230-4348-807a-49ea111aac66-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a0afcafd-14f6-4dd7-8df7-a63592148e0e-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a36fdece-89f5-4e21-b925-6525f47d052f-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d7e2f2f0-2771-4a97-89a4-c406f35df666-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e244f747-0490-4cdc-a7bb-916d591d81fe-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e6261d2c-21a3-4f86-8bab-6cf54e671cf0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f611b71e-9b3b-4675-a481-f494bd8722d0-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/api/UserCreationAndDeletion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/factory/ChromeDriverProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/factory/FirefoxDriverProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/factory/WebDriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springpattern/factory/WebDriverProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/locators/PageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/LogInAccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/LogInTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/RegistrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/SectionsConstructorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/SwitchingPersonalAccountToConstructorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/SwitchingPersonalCabinetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/bin/allure" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/bin/allure.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/config/allure-cucumber.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/config/allure-junit.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/config/allure.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/allure-commandline-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/allure-generator-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/allure-model-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/allure-plugin-api-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/allure1-model-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/annotations-15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/commons-beanutils-1.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/commons-codec-1.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/commons-collections-3.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/commons-collections4-4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/commons-io-2.11.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/commons-lang3-3.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/commons-text-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/config/jetty-logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/config/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-util-ast-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-util-builder-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-util-collection-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-util-data-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-util-dependency-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-util-format-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-util-html-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-util-misc-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-util-sequence-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/flexmark-util-visitor-0.62.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/freemarker-2.3.31.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/httpclient-4.5.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/httpcore-4.4.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jackson-annotations-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jackson-core-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jackson-databind-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jackson-dataformat-xml-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jackson-dataformat-yaml-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jackson-module-jaxb-annotations-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jakarta.activation-api-1.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jakarta.xml.bind-api-2.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/javax.activation-api-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jaxb-api-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jaxb-utils-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jcommander-1.81.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jetty-http-9.4.43.v20210629.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jetty-io-9.4.43.v20210629.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jetty-server-9.4.43.v20210629.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/jetty-util-9.4.43.v20210629.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/opencsv-4.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/properties-2.0.RC5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/slf4j-api-1.7.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/slf4j-log4j12-1.7.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/snakeyaml-1.27.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/stax2-api-4.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/tika-core-2.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/lib/woodstox-core-6.2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/behaviors-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/behaviors-plugin/behaviors-plugin-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/behaviors-plugin/static/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/custom-logo-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/custom-logo-plugin/custom-logo-plugin-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/custom-logo-plugin/static/custom-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/custom-logo-plugin/static/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/jira-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/jira-plugin/jira-plugin-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/jira-plugin/lib/allure-jira-commons-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/jira-plugin/lib/converter-jackson-2.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/jira-plugin/lib/jackson-annotations-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/jira-plugin/lib/jackson-core-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/jira-plugin/lib/jackson-databind-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/jira-plugin/lib/okhttp-3.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/jira-plugin/lib/okio-1.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/jira-plugin/lib/retrofit-2.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/junit-xml-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/junit-xml-plugin/junit-xml-plugin-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/packages-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/packages-plugin/packages-plugin-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/packages-plugin/static/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/screen-diff-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/screen-diff-plugin/screen-diff-plugin-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/screen-diff-plugin/static/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/screen-diff-plugin/static/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/trx-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/trx-plugin/trx-plugin-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xctest-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xctest-plugin/lib/xmlwise-1.2.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xctest-plugin/xctest-plugin-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/allure-jira-commons-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/converter-jackson-2.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/jackson-annotations-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/jackson-core-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/jackson-databind-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/okhttp-3.12.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/okio-1.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/lib/retrofit-2.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xray-plugin/xray-plugin-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xunit-xml-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.15.0/plugins/xunit-xml-plugin/xunit-xml-plugin-2.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SimpleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springpattern/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/springpattern/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/springpattern/LogInAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/LoggingAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/springpattern/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/LogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/springpattern/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/springpattern/SectionsConstructorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/SectionsConstructorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/springpattern/SwitchingPersonalAccountToConstructorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/SwitchingPersonalAccountToConstructorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/springpattern/SwitchingPersonalCabinetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/springpattern/SwitchingPersonalCabinetTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,120 +149,93 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.WebAppTest.executor": "Run",
-    "JUnit.LogAccountTest.logAccount.executor": "Run",
-    "JUnit.LogInAccountTest.executor": "Run",
-    "JUnit.LogInAccountTest.logInAccountInChrome.executor": "Run",
-    "JUnit.LogInAccountTest.logInAccountInFirefox.executor": "Run",
-    "JUnit.LogInTest.executor": "Run",
-    "JUnit.LogInTest.logInTestChrome.executor": "Run",
-    "JUnit.LogInTest.logInTestFirefox.executor": "Run",
-    "JUnit.LogInTest.testMainPageButtonLogIn.executor": "Run",
-    "JUnit.LogInTest.testMainPageButtonPersonalAccount.executor": "Run",
-    "JUnit.LogInTest.testRecoveryButtonLogIn.executor": "Run",
-    "JUnit.LogInTest.testRegistrationButtonLogIn.executor": "Run",
-    "JUnit.RegistrationTest.executor": "Run",
-    "JUnit.RegistrationTest.testRegistrationInChrome.executor": "Run",
-    "JUnit.RegistrationTest.testRegistrationInvalidPassword.executor": "Run",
-    "JUnit.RegistrationTest.testValidRegistration.executor": "Run",
-    "JUnit.SectionsConstructorTest.executor": "Run",
-    "JUnit.SectionsConstructorTest.navigatingSectionsConstructor.executor": "Run",
-    "JUnit.SectionsConstructorTest.sectionsConstructorTestFirefox.executor": "Run",
-    "JUnit.SimpleWebDriverTest.executor": "Run",
-    "JUnit.SimpleWebDriverTest.testOpenChromeAndClickButton.executor": "Run",
-    "JUnit.SimpleWebDriverTest.testOpenSiteInYandex.executor": "Run",
-    "JUnit.SimpleWebDriverTest.testOpenYandexAndClickButton.executor": "Run",
-    "JUnit.SwitchingPersonalAccountToConstructorTest.authorizedUserTransitionLogo.executor": "Run",
-    "JUnit.SwitchingPersonalAccountToConstructorTest.authorizedUserTransitionMainPage.executor": "Run",
-    "JUnit.SwitchingPersonalAccountToConstructorTest.executor": "Run",
-    "JUnit.SwitchingPersonalCabinetTest.TransitionAuthorizedUser.executor": "Run",
-    "JUnit.SwitchingPersonalCabinetTest.TransitionUnauthorizedUser.executor": "Run",
-    "JUnit.SwitchingPersonalCabinetTest.executor": "Run",
-    "JUnit.SwitchingPersonalCabinetTest.switchingPersonalCabinetChrome.executor": "Run",
-    "JUnit.SwitchingPersonalCabinetTest.switchingPersonalCabinetFirefox.executor": "Run",
-    "JUnit.YandexTest.executor": "Run",
-    "JUnit.YandexTest.test.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.Diplom_3 [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop3",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/java/Diplom/Diplom_3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.WebAppTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogAccountTest.logAccount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInAccountTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInAccountTest.logInAccountInChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInAccountTest.logInAccountInFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.logInTestChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.logInTestFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testMainPageButtonLogIn.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testMainPageButtonLogInChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testMainPageButtonLogInFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testMainPageButtonPersonalAccount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testMainPageButtonPersonalAccountChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testMainPageButtonPersonalAccountFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testRecoveryButtonLogIn.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testRecoveryButtonLogInFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testRegistrationButtonLogIn.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testRegistrationButtonLogInChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogInTest.testRegistrationButtonLogInFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoggingAccountTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoggingAccountTest.logInAccountInFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoggingAccountTest.testLogInAccountInChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoggingAccountTest.testLogInAccountInFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.registrationTestChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.registrationTestFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.testRegistrationInChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.testRegistrationInvalidPassword.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.testRegistrationInvalidPasswordChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.testRegistrationInvalidPasswordFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.testValidRegistration.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.testValidRegistrationFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SectionsConstructorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SectionsConstructorTest.navigatingSectionsConstructor.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SectionsConstructorTest.sectionsConstructorTestFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SectionsConstructorTest.testSectionsConstructorTestChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SectionsConstructorTest.testSectionsConstructorTestFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SimpleWebDriverTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SimpleWebDriverTest.testOpenChromeAndClickButton.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SimpleWebDriverTest.testOpenSiteInYandex.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SimpleWebDriverTest.testOpenYandexAndClickButton.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwitchingPersonalAccountToConstructorTest.authorizedUserTransitionLogo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwitchingPersonalAccountToConstructorTest.authorizedUserTransitionMainPage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwitchingPersonalAccountToConstructorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwitchingPersonalAccountToConstructorTest.switchingPersonalAccountToConstructorChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwitchingPersonalAccountToConstructorTest.switchingPersonalAccountToConstructorFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwitchingPersonalCabinetTest.TransitionAuthorizedUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwitchingPersonalCabinetTest.TransitionUnauthorizedUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwitchingPersonalCabinetTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwitchingPersonalCabinetTest.switchingPersonalCabinetChrome.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SwitchingPersonalCabinetTest.switchingPersonalCabinetFirefox.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.YandexTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.YandexTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop3&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/java/Diplom/Diplom_2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\java\Diplom\Diplom_3\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LogInAccountTest">
-    <configuration name="LogInAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.springpattern.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.springpattern" />
-      <option name="MAIN_CLASS_NAME" value="org.springpattern.LogInAccountTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SwitchingPersonalCabinetTest">
     <configuration name="LogInTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.springpattern.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.springpattern" />
       <option name="MAIN_CLASS_NAME" value="org.springpattern.LogInTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogInTest.logInTestChrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.springpattern.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.springpattern" />
-      <option name="MAIN_CLASS_NAME" value="org.springpattern.LogInTest" />
-      <option name="METHOD_NAME" value="logInTestChrome" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogInTest.logInTestFirefox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.springpattern.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.springpattern" />
-      <option name="MAIN_CLASS_NAME" value="org.springpattern.LogInTest" />
-      <option name="METHOD_NAME" value="logInTestFirefox" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,7 +244,7 @@
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.springpattern.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,12 +255,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SectionsConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springpattern" />
+      <option name="MAIN_CLASS_NAME" value="org.springpattern.SectionsConstructorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchingPersonalAccountToConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springpattern" />
+      <option name="MAIN_CLASS_NAME" value="org.springpattern.SwitchingPersonalAccountToConstructorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchingPersonalCabinetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.springpattern" />
+      <option name="MAIN_CLASS_NAME" value="org.springpattern.SwitchingPersonalCabinetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LogInAccountTest" />
-        <item itemvalue="JUnit.LogInTest.logInTestFirefox" />
+        <item itemvalue="JUnit.SwitchingPersonalCabinetTest" />
+        <item itemvalue="JUnit.SwitchingPersonalAccountToConstructorTest" />
+        <item itemvalue="JUnit.SectionsConstructorTest" />
         <item itemvalue="JUnit.RegistrationTest" />
-        <item itemvalue="JUnit.LogInTest.logInTestChrome" />
         <item itemvalue="JUnit.LogInTest" />
       </list>
     </recent_temporary>
@@ -255,7 +351,18 @@
       <workItem from="1725826071718" duration="4222000" />
       <workItem from="1725887054014" duration="381000" />
       <workItem from="1725888134981" duration="1683000" />
-      <workItem from="1725955003755" duration="1288000" />
+      <workItem from="1725955003755" duration="17099000" />
+      <workItem from="1725980283772" duration="14456000" />
+      <workItem from="1725997462017" duration="108000" />
+      <workItem from="1725997897403" duration="2766000" />
+      <workItem from="1726000683277" duration="1445000" />
+      <workItem from="1726042692058" duration="7151000" />
+      <workItem from="1726067270857" duration="1265000" />
+      <workItem from="1726076545358" duration="7069000" />
+      <workItem from="1726128053306" duration="3911000" />
+      <workItem from="1726142969090" duration="1515000" />
+      <workItem from="1726144523146" duration="3664000" />
+      <workItem from="1726160710158" duration="1693000" />
     </task>
     <servers />
   </component>

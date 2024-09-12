@@ -8,110 +8,47 @@
     <packaging>jar</packaging>
 
     <name>Diplom_3</name>
-    <url>http://maven.apache.org</url>
-
     <properties>
-        <junit.jupiter.version>5.10.2</junit.jupiter.version>
-        <junit.platform.version>1.10.0</junit.platform.version>
-        <selenium.version>4.22.0</selenium.version>
-        <slf4j.version>1.7.32</slf4j.version>
-        <logback.version>1.2.6</logback.version>
-        <webdrivermanager.version>5.9.1</webdrivermanager.version>
-        <annotationUtils.version>2.9-RELEASE</annotationUtils.version>
-        <opentelemetry.version>1.25.0</opentelemetry.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <junit.jupiter.version>4.13.2</junit.jupiter.version>
         <rest-allured.version>5.5.0</rest-allured.version>
-        <allure-junit4.version>2.6.0</allure-junit4.version>
         <allure.version>2.29.0</allure.version>
+        <org.junit.jupiter>5.11.0</org.junit.jupiter>
+
 
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <aspectj.version>1.8.10</aspectj.version>
         <allure-junit4.version>2.6.0</allure-junit4.version>
     </properties>
-
-
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>junit</groupId>-->
-<!--            <artifactId>junit</artifactId>-->
-<!--            <version>4.13.2</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-commons</artifactId>
-            <version>1.10.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v126</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>${webdrivermanager.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.appundefined</groupId>
-            <artifactId>annotationUtils</artifactId>
-            <version>${annotationUtils.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.opentelemetry</groupId>
-            <artifactId>opentelemetry-api</artifactId>
-            <version>${opentelemetry.version}</version>
-        </dependency>
-
-
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>${rest-allured.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4 -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit4</artifactId>
             <version>${allure-junit4.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-rest-assured -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-rest-assured</artifactId>
             <version>${allure.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.groovy/groovy -->
         <dependency>
             <groupId>org.apache.groovy</groupId>
             <artifactId>groovy</artifactId>
@@ -127,28 +64,38 @@
             <artifactId>jaxb-runtime</artifactId>
             <version>2.3.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>1.9.22.1</version>
             <scope>runtime</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.7.0</version>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.7</version>
             <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.24.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
+
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest</artifactId>
-            <version>3.0</version>
-            <scope>test</scope>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.9.2</version>
         </dependency>
+
 
     </dependencies>
+
 
     <build>
         <plugins>
@@ -171,14 +118,15 @@
             </plugin>
 
 
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
                     <testFailureIgnore>false</testFailureIgnore>
-                    <argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
                     <properties>
                         <property>
                             <name>listener</name>
@@ -203,136 +151,4 @@
 
         </plugins>
     </build>
-<!--    <properties>-->
-
-<!--        <junit.jupiter.version>5.10.2</junit.jupiter.version>-->
-<!--        <webdrivermanager.version>5.9.2</webdrivermanager.version>-->
-<!--        <selenium.version>4.22.0</selenium.version>-->
-
-
-<!--        <opentelemetry.version>1.25.0</opentelemetry.version>-->
-<!--        <allure-junit5.version>2.20.1</allure-junit5.version>-->
-<!--        <mockito.version>3.12.4</mockito.version>-->
-
-
-<!--        <maven-surefire-plugin.version>3.5.0</maven-surefire-plugin.version>-->
-<!--        <aspectj.version>1.8.10</aspectj.version>-->
-<!--        <allure-junit4.version>2.6.0</allure-junit4.version>-->
-<!--    </properties>-->
-
-<!--    <dependencies>-->
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>io.github.bonigarcia</groupId>-->
-<!--            <artifactId>webdrivermanager</artifactId>-->
-<!--            <version>${webdrivermanager.version}</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.seleniumhq.selenium</groupId>-->
-<!--            <artifactId>selenium-java</artifactId>-->
-<!--            <version>${selenium.version}</version>-->
-<!--        </dependency>-->
-
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.rest-assured/rest-assured &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>io.rest-assured</groupId>-->
-<!--            <artifactId>rest-assured</artifactId>-->
-<!--            <version>5.5.0</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>junit</groupId>-->
-<!--            <artifactId>junit</artifactId>-->
-<!--            <version>4.13.2</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.junit.jupiter</groupId>-->
-<!--            <artifactId>junit-jupiter-api</artifactId>-->
-<!--            <version>5.11.0</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.junit.jupiter</groupId>-->
-<!--            <artifactId>junit-jupiter</artifactId>-->
-<!--            <version>5.11.0</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.qameta.allure/allure-junit5 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>io.qameta.allure</groupId>-->
-<!--            <artifactId>allure-junit5</artifactId>-->
-<!--            <version>2.24.0</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.testng</groupId>-->
-<!--            <artifactId>testng</artifactId>-->
-<!--            <version>6.9.8</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.slf4j</groupId>-->
-<!--            <artifactId>slf4j-simple</artifactId>-->
-<!--            <version>1.7.30</version>-->
-<!--        </dependency>-->
-
-
-
-<!--    </dependencies>-->
-
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <version>3.8.1</version>-->
-<!--                <configuration>-->
-<!--                    <source>11</source>-->
-<!--                    <target>11</target>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <groupId>io.qameta.allure</groupId>-->
-<!--                <artifactId>allure-maven</artifactId>-->
-<!--                <version>2.13.0</version>-->
-<!--                <configuration>-->
-<!--                    <reportVersion>2.15.0</reportVersion>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-
-
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <version>${maven-surefire-plugin.version}</version>-->
-<!--                <configuration>-->
-<!--                    <testFailureIgnore>false</testFailureIgnore>-->
-<!--                    <argLine>-->
-<!--                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
-<!--                    </argLine>-->
-<!--                    <properties>-->
-<!--                        <property>-->
-<!--                            <name>listener</name>-->
-<!--                            <value>io.qameta.allure.junit4.AllureJunit4</value>-->
-<!--                        </property>-->
-<!--                    </properties>-->
-<!--                    <systemProperties>-->
-<!--                        <property>-->
-<!--                            <name>allure.results.directory</name>-->
-<!--                            <value>${project.build.directory}/allure-results</value>-->
-<!--                        </property>-->
-<!--                    </systemProperties>-->
-<!--                </configuration>-->
-<!--                <dependencies>-->
-<!--                    <dependency>-->
-<!--                        <groupId>org.aspectj</groupId>-->
-<!--                        <artifactId>aspectjweaver</artifactId>-->
-<!--                        <version>${aspectj.version}</version>-->
-<!--                    </dependency>-->
-<!--                </dependencies>-->
-<!--            </plugin>-->
-
-<!--        </plugins>-->
-<!--    </build>-->
 </project>

@@ -1,183 +1,101 @@
 package org.springpattern;
 
-import locators.PageObject;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.springpattern.api.UserCreationAndDeletion;
-import org.springpattern.factory.WebDriverFactory;
-import org.testng.Assert;
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
+import org.junit.Test;
 
-import java.time.Duration;
+public class LogInTest extends BaseTest {
 
-public class LogInTest {
-    private WebDriver driver;
-    private String email = "user0046@yandex.ru";
-    private String password = "password";
-    private String name = "Username";
-    private String accessToken;
-    private UserCreationAndDeletion userCreationAndDeletion;
-    PageObject pageObject;
-
-    @BeforeEach
-    public void setUp() {
-        userCreationAndDeletion = new UserCreationAndDeletion();
-        userCreationAndDeletion.createUniqueUser(new User(email, password, name));
-        accessToken = userCreationAndDeletion.authorizationUser();
-
-    }
-
-    @AfterEach
-    public void clean() {
-        if (accessToken != null) {
-            userCreationAndDeletion.deleteUser(accessToken);
-        }
-
-        if (driver != null) {
-            driver.quit();
-        }
+    @Test
+    @Description("Тест кнопки «Войти в аккаунт» на главной страницу через браузер Firefox")
+    public void testMainPageButtonLogInFirefox() {
+        mainPageButtonLogIn("firefox");
     }
 
     @Test
-    public void logInTestFirefox() {
-        testMainPageButtonLogIn("firefox");
-        testMainPageButtonPersonalAccount("firefox");
-        testRegistrationButtonLogIn("firefox");
-        testRecoveryButtonLogIn("firefox");
+    @Description("Тест кнопки «Войти в аккаунт» на главной страницу через браузер Chrome")
+    public void testMainPageButtonLogInChrome() {
+        mainPageButtonLogIn("chrome");
+    }
+
+
+    @Test
+    @Description("Тест кнопки «Личный кабинет» в шапке страницы через браузер Firefox")
+    public void testMainPageButtonPersonalAccountFirefox() {
+        mainPageButtonPersonalAccount("firefox");
     }
 
     @Test
-    public void logInTestChrome() {
-        testMainPageButtonLogIn("chrome");
-        testMainPageButtonPersonalAccount("chrome");
-        testRegistrationButtonLogIn("chrome");
-        testRecoveryButtonLogIn("chrome");
+    @Description("Тест кнопки «Личный кабинет» в шапке страницы через браузер Chrome")
+    public void testMainPageButtonPersonalAccountChrome() {
+        mainPageButtonPersonalAccount("chrome");
     }
+
+
+    @Test
+    @Description("Тест кнопки «Войти» на странице регистрации через браузер Firefox")
+    public void testRegistrationButtonLogInFirefox() {
+        registrationButtonLogIn("firefox");
+    }
+
+    @Test
+    @Description("Тест кнопки «Войти» на странице регистрации через браузер Chrome")
+    public void testRegistrationButtonLogInChrome() {
+        registrationButtonLogIn("chrome");
+    }
+
+
+    @Test
+    @Description("Тест кнопки «Войти» на странице восстановления пароля через браузер Firefox")
+    public void testRecoveryButtonLogInFirefox() {
+        recoveryButtonLogIn("firefox");
+    }
+
+    @Test
+    @Description("Тест кнопки «Войти» на странице восстановления пароля через браузер Chrome")
+    public void testRecoveryButtonLogInChrome() {
+        recoveryButtonLogIn("chrome");
+    }
+
 
     //вход по кнопке «Войти в аккаунт» на главной,
+    @Step("Вход по кнопки «Войти в аккаунт» в браузере {browser}")
+    public void mainPageButtonLogIn(String browser) {
+        initializeDriver(browser);
+        goPage("");
 
-    public void testMainPageButtonLogIn(String browser) {
-        pageObject = new PageObject();
-        driver = WebDriverFactory.getDriver(browser);
-        driver.get("https://stellarburgers.nomoreparties.site");
-
-        driver.manage().window().maximize();
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(pageObject.mainPageButtonLogIn)).click();
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(pageObject.logInTitleForm));
-
-        // Проверка на изменение заголовка
-        WebElement loginTitle = driver.findElement(pageObject.logInTitleForm);
-        String titleText = loginTitle.getText();
-        Assert.assertEquals("Заголовок формы не совпадает", "Вход", titleText);
-
-        // Ввод email
-        WebElement emailField = driver.findElement(pageObject.logInInputEmail);
-        emailField.sendKeys(email); // Укажите email для регистрации
-
-        // Ввод пароля
-        WebElement passwordField = driver.findElement(pageObject.logInInputPassword);
-        passwordField.sendKeys(password);
-
-        WebElement logIn = driver.findElement(pageObject.logInButtonLogin);
-        logIn.click();
-
+        clickSignInAccount();
+        checkName(pageObject.logInTitleForm, "Заголовок формы не совпадает");
+        switchingPersonalCabinet();
     }
 
     //вход через кнопку «Личный кабинет»,
-    public void testMainPageButtonPersonalAccount(String browser) {
-        pageObject = new PageObject();
-        driver = WebDriverFactory.getDriver(browser);
-        driver.get("https://stellarburgers.nomoreparties.site");
-
-        driver.manage().window().maximize();
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(pageObject.headerButtonPersonalAccount)).click();
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(pageObject.logInTitleForm));
-
-        // Проверка на изменение заголовка
-        WebElement loginTitle = driver.findElement(pageObject.logInTitleForm);
-        String titleText = loginTitle.getText();
-        Assert.assertEquals("Заголовок формы не совпадает", "Вход", titleText);
-
-        // Ввод email
-        WebElement emailField = driver.findElement(pageObject.logInInputEmail);
-        emailField.sendKeys(email); // Укажите email для регистрации
-
-        // Ввод пароля
-        WebElement passwordField = driver.findElement(pageObject.logInInputPassword);
-        passwordField.sendKeys(password);
-
-        WebElement logIn = driver.findElement(pageObject.logInButtonLogin);
-        logIn.click();
+    @Step("Вход по кнопки «Личный кабинет» в браузере {browser}")
+    public void mainPageButtonPersonalAccount(String browser) {
+        initializeDriver(browser);
+        goPage("");
+        switchingPersonalCabinet();
+        checkName(pageObject.logInTitleForm, "Заголовок формы не совпадает");
+        performLogin();
     }
 
-    //вход через кнопку в форме регистрации,
-    public void testRegistrationButtonLogIn(String browser) {
-        pageObject = new PageObject();
-        driver = WebDriverFactory.getDriver(browser);
-        driver.get("https://stellarburgers.nomoreparties.site/register");
-
-        driver.manage().window().maximize();
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(pageObject.registrationButtonLogIn)).click();
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(pageObject.logInTitleForm));
-
-        // Проверка на изменение заголовка
-        WebElement loginTitle = driver.findElement(pageObject.logInTitleForm);
-        String titleText = loginTitle.getText();
-        Assert.assertEquals("Заголовок формы не совпадает", "Вход", titleText);
-
-        // Ввод email
-        WebElement emailField = driver.findElement(pageObject.logInInputEmail);
-        emailField.sendKeys(email); // Укажите email для регистрации
-
-        // Ввод пароля
-        WebElement passwordField = driver.findElement(pageObject.logInInputPassword);
-        passwordField.sendKeys(password);
-
-        WebElement logIn = driver.findElement(pageObject.logInButtonLogin);
-        logIn.click();
-
+    //вход через кнопку в форме регистрации
+    @Step("Вход по кнопки «Войти» на странице регистрации в браузере {browser}")
+    public void registrationButtonLogIn(String browser) {
+        initializeDriver(browser);
+        goPage("/register");
+        clickSignInAccountRegistration();
+        checkName(pageObject.logInTitleForm, "Заголовок формы не совпадает");
+        performLogin();
     }
 
     //вход через кнопку в форме восстановления пароля.
-    public void testRecoveryButtonLogIn(String browser) {
-        pageObject = new PageObject();
-        driver = WebDriverFactory.getDriver(browser);
-        driver.get("https://stellarburgers.nomoreparties.site/forgot-password");
-
-        driver.manage().window().maximize();
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(pageObject.recoveryButtonLogIn)).click();
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(pageObject.logInTitleForm));
-
-        // Проверка на изменение заголовка
-        WebElement loginTitle = driver.findElement(pageObject.logInTitleForm);
-        String titleText = loginTitle.getText();
-        Assert.assertEquals("Заголовок формы не совпадает", "Вход", titleText);
-
-        // Ввод email
-        WebElement emailField = driver.findElement(pageObject.logInInputEmail);
-        emailField.sendKeys(email); // Укажите email для регистрации
-
-        // Ввод пароля
-        WebElement passwordField = driver.findElement(pageObject.logInInputPassword);
-        passwordField.sendKeys(password);
-
-        WebElement logIn = driver.findElement(pageObject.logInButtonLogin);
-        logIn.click();
+    @Step("Вход по кнопки «Войти» на странице восстановления пароля в браузере {browser}")
+    public void recoveryButtonLogIn(String browser) {
+        initializeDriver(browser);
+        goPage("/forgot-password");
+        clickSignInAccountrRecovery();
+        checkName(pageObject.logInTitleForm, "Заголовок формы не совпадает");
+        performLogin();
     }
 }
