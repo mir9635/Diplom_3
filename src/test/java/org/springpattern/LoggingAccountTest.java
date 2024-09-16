@@ -8,7 +8,6 @@ import org.junit.Test;
 public class LoggingAccountTest extends BaseTest {
 
 
-
     @Test
     @Description("Тест выход по кнопке «Выйти» в личном кабинете через браузер Firefox")
     public void testLogInAccountInFirefox() {
@@ -21,6 +20,8 @@ public class LoggingAccountTest extends BaseTest {
         logAccount("chrome");
     }
 
+
+
     @Step("Выход из аккаунта в браузере {browser}")
     private void logAccount(String browser) {
         initializeDriver(browser);
@@ -29,7 +30,7 @@ public class LoggingAccountTest extends BaseTest {
         switchingPersonalCabinet();
         performExit();
         switchingPersonalCabinet();
-        checkName(pageObject.logInTitleForm, "Заголовок формы входа не отображается, выход не произошел.");
+        checkName(pageObjectLogIn.logInTitleForm, "Заголовок формы входа не отображается, выход не произошел.");
 
     }
 }

@@ -37,7 +37,7 @@ public class SwitchingPersonalCabinetTest extends BaseTest {
         initializeDriver(browser);
         goPage("");
         switchingPersonalCabinet();
-        checkName(pageObject.logInTitleForm, "Заголовок формы не совпадает");
+        checkName(pageObjectLogIn.logInTitleForm, "Заголовок формы не совпадает");
 
     }
 
@@ -47,6 +47,6 @@ public class SwitchingPersonalCabinetTest extends BaseTest {
         goPage("/login");
         performLogin();
         switchingPersonalCabinet();
-        checkName(pageObject.personalAccountButtonExit, "Кнопка 'Выход' не найдена. Пользователь не авторизован или произошла ошибка.");
+        checkName(pageObjectPersonalAccount.personalAccountButtonExit, "Кнопка 'Выход' не найдена. Пользователь не авторизован или произошла ошибка.");
     }
 }

@@ -1,10 +1,11 @@
 package org.springpattern;
 
 import io.qameta.allure.Step;
-import locators.PageObject;
+import locators.*;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -24,21 +25,27 @@ public class BaseTest {
     public String name = "Username";
     public String accessToken;
     public UserCreationAndDeletion userCreationAndDeletion;
-    public PageObject pageObject;
+    public PageObjectHeader pageObjectHeader;
+    public PageObjectLogIn pageObjectLogIn;
+    public PageObjectRegistration pageObjectRegistration;
+    public PageObjectRecovery pageObjectRecovery;
+    public PageObjectPersonalAccount pageObjectPersonalAccount;
+    public PageObjectMain pageObjectMain;
 
-
-//    @BeforeEach
     @Before
     public void setUp() {
         userCreationAndDeletion = new UserCreationAndDeletion();
         userCreationAndDeletion.createUniqueUser(new User(email,password,name));
         accessToken = userCreationAndDeletion.authorizationUser();
-        pageObject = new PageObject();
+        pageObjectHeader = new PageObjectHeader();
+        pageObjectLogIn = new PageObjectLogIn();
+        pageObjectRegistration = new PageObjectRegistration();
+        pageObjectRecovery = new PageObjectRecovery();
+        pageObjectPersonalAccount = new PageObjectPersonalAccount();
+        pageObjectMain = new PageObjectMain();
 
     }
 
-
-    //@AfterEach
     @After
     public void clean() {
         System.out.println("DRIVER " +driver);
@@ -64,27 +71,27 @@ public class BaseTest {
 
     @Step("Регистрации")
     protected void userRegistration() {
-        driver.findElement(pageObject.registrationInputName).sendKeys(name);
-        driver.findElement(pageObject.registrationInputEmail).sendKeys(email);
-        driver.findElement(pageObject.registrationInputPassword).sendKeys(password);
-        WebElement registerButton = driver.findElement(pageObject.registrationButtonRegistration);
+        driver.findElement(pageObjectRegistration.registrationInputName).sendKeys(name);
+        driver.findElement(pageObjectRegistration.registrationInputEmail).sendKeys(email);
+        driver.findElement(pageObjectRegistration.registrationInputPassword).sendKeys(password);
+        WebElement registerButton = driver.findElement(pageObjectRegistration.registrationButtonRegistration);
         clickElement(registerButton);
     }
 
     @Step("Регистрации без валидного пароля")
     protected void userRegistrationInvalid(String password) {
-        driver.findElement(pageObject.registrationInputName).sendKeys(name);
-        driver.findElement(pageObject.registrationInputEmail).sendKeys(email);
-        driver.findElement(pageObject.registrationInputPassword).sendKeys(password);
-        WebElement registerButton = driver.findElement(pageObject.registrationButtonRegistration);
+        driver.findElement(pageObjectRegistration.registrationInputName).sendKeys(name);
+        driver.findElement(pageObjectRegistration.registrationInputEmail).sendKeys(email);
+        driver.findElement(pageObjectRegistration.registrationInputPassword).sendKeys(password);
+        WebElement registerButton = driver.findElement(pageObjectRegistration.registrationButtonRegistration);
         clickElement(registerButton);
     }
 
     @Step("Выполнение входа")
     protected void performLogin() {
-        driver.findElement(pageObject.logInInputEmail).sendKeys(email);
-        driver.findElement(pageObject.logInInputPassword).sendKeys(password);
-        driver.findElement(pageObject.logInButtonLogin).click();
+        driver.findElement(pageObjectLogIn.logInInputEmail).sendKeys(email);
+        driver.findElement(pageObjectLogIn.logInInputPassword).sendKeys(password);
+        driver.findElement(pageObjectLogIn.logInButtonLogin).click();
 
     }
 
@@ -99,7 +106,7 @@ public class BaseTest {
     @Step("Переход в личный кабинет по кнопке 'Личный Кабинет'")
     public void switchingPersonalCabinet() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        WebElement personalAccountButton = wait.until(ExpectedConditions.elementToBeClickable(pageObject.headerButtonPersonalAccount));
+        WebElement personalAccountButton = wait.until(ExpectedConditions.elementToBeClickable(pageObjectHeader.headerButtonPersonalAccount));
 
         clickElement(personalAccountButton);
     }
@@ -107,7 +114,7 @@ public class BaseTest {
     @Step("Выполнение выхода")
     protected void performExit() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        WebElement personalAccountExit = wait.until(ExpectedConditions.elementToBeClickable(pageObject.personalAccountButtonExit));
+        WebElement personalAccountExit = wait.until(ExpectedConditions.elementToBeClickable(pageObjectPersonalAccount.personalAccountButtonExit));
 
         clickElement(personalAccountExit);
     }
@@ -115,7 +122,7 @@ public class BaseTest {
     @Step("Клик по кнопке «Конструктор»")
     public void clickConstructor() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement constructorButton = wait.until(ExpectedConditions.elementToBeClickable(pageObject.headerButtonConstructor));
+        WebElement constructorButton = wait.until(ExpectedConditions.elementToBeClickable(pageObjectHeader.headerButtonConstructor));
 
         clickElement(constructorButton);
 
@@ -124,7 +131,7 @@ public class BaseTest {
     @Step("Клик по лого")
     public void clickLogo() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement logoButton = wait.until(ExpectedConditions.elementToBeClickable(pageObject.headerLinkLogo));
+        WebElement logoButton = wait.until(ExpectedConditions.elementToBeClickable(pageObjectHeader.headerLinkLogo));
 
         clickElement(logoButton);
     }
@@ -132,7 +139,7 @@ public class BaseTest {
     @Step("Клик по кнопке «Войти в аккаунт»")
     public void clickSignInAccount() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement mainPageLogIn = wait.until(ExpectedConditions.elementToBeClickable(pageObject.mainPageButtonLogIn));
+        WebElement mainPageLogIn = wait.until(ExpectedConditions.elementToBeClickable(pageObjectMain.mainPageButtonLogIn));
 
         clickElement(mainPageLogIn);
     }
@@ -140,7 +147,7 @@ public class BaseTest {
     @Step("Клик по кнопке «Войти» на странице регистрации")
     public void clickSignInAccountRegistration() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement refistration =  wait.until(ExpectedConditions.elementToBeClickable(pageObject.registrationButtonLogIn));
+        WebElement refistration =  wait.until(ExpectedConditions.elementToBeClickable(pageObjectRegistration.registrationButtonLogIn));
 
         clickElement(refistration);
     }
@@ -148,7 +155,7 @@ public class BaseTest {
     @Step("Клик по кнопке «Войти» на восстановления пароля")
     public void clickSignInAccountrRecovery() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement recovery =   wait.until(ExpectedConditions.elementToBeClickable(pageObject.recoveryButtonLogIn));
+        WebElement recovery =   wait.until(ExpectedConditions.elementToBeClickable(pageObjectRecovery.recoveryButtonLogIn));
 
         clickElement(recovery);
     }
